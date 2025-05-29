@@ -1,0 +1,53 @@
+<q-page>
+  <div class="row justify-center">
+    <q-select v-model="s.app.dummy" emit-value filled label="Hegység:" map-options option-label="" option-value=""
+ :options="s.app.dummys" style="width: 350px" />
+  </div>
+  <div class="row justify-center q-ma-xl">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+      <q-card class="q-ma-md">
+        <q-card-section class="text-center text-h5" style="background-color: #c8be9c">
+          Avas kilátó
+        </q-card-section>
+        <q-card-section class="text-h7" style="background-color: #ffe4c4">
+          <ul>
+            <li>
+              <span>Hegy:</span>
+              <b>Avas</b>
+            </li>
+            <li>
+              <span>Magasság:</span>
+              <b>72.2 m</b>
+            </li>
+            <li>
+              <span>Épült:</span>
+              <b>1963.05.04</b>
+            </li>
+          </ul>
+        </q-card-section>
+        <q-card-section style="background-color: #c8be9c">
+          <div class="text-h7 text-justify">
+            Tévétoronyként és kilátóként egyaránt használt építmény. A kilátóteraszról
+            madártávlatból bontakozik ki Miskolc városa és a környező táj. A torony tetején kávézó
+            várja a vendégeket.
+          </div>
+        </q-card-section>
+        <q-card-section style="background-color: #ffe4c4">
+          <q-img
+            fit="scale-down"
+            src="https://nits68.github.io/static/viewpoints/avas.jpg"
+            style="max-height: 200px"
+          />
+        </q-card-section>
+      </q-card>
+    </div>
+  </div>
+</q-page>
+
+Style:
+
+span {
+  width: 80px;
+  display: inline-block;
+}
+

@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "codecoaching.quasar-docs",
+    "eamodio.gitlens",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.npm-intellisense",
+    "hossaini.quasar-intellisense",
+    "antfu.iconify",
+    "abdelaziz18003.quasar-snippets",
+    "christian-kohler.path-intellisense",
+    "tomoki1207.pdf",
+    "vue.volar"
+  ],
+  "unwantedRecommendations": [
+    "octref.vetur",
+    "hookyqr.beautify",
+    "dbaeumer.jshint",
+    "ms-vscode.vscode-typescript-tslint-plugin"
+  ]
+}

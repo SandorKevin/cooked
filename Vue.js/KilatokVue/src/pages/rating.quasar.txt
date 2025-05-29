@@ -1,0 +1,20 @@
+<q-page>
+  <div class="row justify-center">
+    <q-card class="q-pa-md" style="width: 60vw; min-width: 300px">
+      <q-form @submit="Submit()>
+        <h5 class="text-center q-mt-sm q-mb-none">Kilátók értékelése</h5>
+        <q-select v-model="s.app.dummy" class="q-ma-md" emit-value filled label="Kilátó" map-options option-label="" option-value="" :options="s.app.dummys" />
+        <q-input v-model="s.app.dummy" class="q-ma-md" filled label="Az Ön e-mail címe:" type="text" />
+        <div class="q-mx-md">
+          Értékelés:
+          <q-slider v-model="s.app.dummy" label-always marker-labels markers :max="10" :min="1" />
+        </div>
+        <q-input v-model="s.app.dummy" class="q-ma-md" filled label="Megjegyzés:" type="textarea" />
+        <q-checkbox v-model="s.app.dummy" checked-icon="task_alt" label="Felhasználási feltételeket elfogadom" />
+        <div class="row justify-center">
+          <q-btn class="q-mr-md" color="green" label="Küldés" no-caps type="submit" />
+        </div>
+      </q-form>
+    </q-card>
+  </div>
+</q-page>

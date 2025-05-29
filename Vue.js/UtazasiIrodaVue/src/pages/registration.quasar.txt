@@ -1,0 +1,57 @@
+  <q-page>
+    <div class="row justify-center">
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4 q-gutter-md">
+        <q-form class="q-gutter-md" @submit="Submit()">
+          <h4 class="text-center q-mt-lg q-mb-none">Regisztráció</h4>
+          <q-select
+            v-model="s.app.dummy"
+            clearable
+            emit-value
+            filled
+            label="Utazás:"
+            map-options
+            option-label=""
+            option-value=""
+            :options="s.app.dummys"
+            :rules="[(val) => val || 'Kérjük válasszon utazást!']"
+          />
+          <q-input
+            v-model="s.app.dummy"
+            filled
+            label="Az ön neve:"
+            :rules="[(val: string) => val?.length > 0 || 'Kérjük adja meg a nevét!']"
+            type="text"
+          />
+          <q-input
+            v-model="s.app.dummy"
+            filled
+            label="Az Ön e-mail címe:"
+            :rules="[(val: string) => val?.length > 0 || 'Kérjük adja meg az e-mail címét!']"
+            type="email"
+          />
+          <q-input
+            v-model="s.app.dummy"
+            filled
+            label="Résztvevők száma:"
+            :rules="[(val: number) => val > 0 || 'Legalább egy résztvevőt meg kell adni!']"
+            type="number"
+          />
+          <q-input
+            v-model="s.app.dummy"
+            clearable
+            filled
+            label="Utolsó COVID oltásának dátuma:"
+            :rules="[(val) => val != undefined || 'Kérjük adja meg az utolsó COVID oltásának dátumát!']"
+            type="date"
+          />
+          <div class="row q-mb-md">
+            <q-checkbox v-model="s.app.dummy" filled label="Felhasználási feltételeket elfogadom" />
+          </div>
+          <div class="row justify-center">
+            <q-btn class="q-mr-md" color="green" label="Küldés" no-caps type="submit" />
+          </div>
+          <!-- {{ s.many.document }} -->
+        </q-form>
+      </div>
+    </div>
+  </q-page>
