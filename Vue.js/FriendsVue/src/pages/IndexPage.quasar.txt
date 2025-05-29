@@ -1,0 +1,33 @@
+  <q-page>
+    <q-input v-model="s.app.dummy" class="q-mx-auto" dense filled label="Filter" style="width: 40%" type="text" />
+    <div class="row text-center">
+      <div class="col-12 q-gutter-lg q-mt-xs">
+        <q-btn color="blue" no-caps>First</q-btn>
+        <q-btn color="blue" no-caps>Prev</q-btn>
+        <q-btn color="blue" no-caps>Next</q-btn>
+        <q-btn color="blue" no-caps>Last</q-btn>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <q-card class="q-ma-md">
+          <q-card-section>
+            <div class="text-h6 absolute-top text-center bg-blue-2">The One Where It All Began - (30min)</div>
+          </q-card-section>
+
+          <q-img fit="contain" src="http://static.tvmaze.com/uploads/images/medium_landscape/23/59019.jpg"> </q-img>
+          <q-card-section>
+            <div class="text bg-yellow-2 rounded-borders q-pa-sm">
+              <div class="text-h6">Monica's old friend Rachel moves in with her after leaving her fiancé.</div>
+            </div>
+          </q-card-section>
+          <q-card-section>
+            <div class="text bg-blue-2 rounded-borders q-pa-sm">
+              <div class="text-h6">Season: first, years: 1994-1995</div>
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
+    </div>
+  </q-page>

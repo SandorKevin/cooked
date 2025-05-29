@@ -1,0 +1,14 @@
+<template>
+  <q-page>
+    <div class="column flex-center" style="min-height: inherit">
+      <q-img alt="Jedlik logo" src="" width="150px" />
+      <h2>Jedlik Ányos Technikum - Győr</h2>
+    </div>
+  </q-page>
+</template>
+
+<style lang="scss" scoped>
+h2 {
+  font-size: 3vw;
+}
+</style>
