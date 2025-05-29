@@ -1,0 +1,12 @@
+{
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["node", "vite/client", "pinia-plugin-persist", "@intlify/unplugin-vue-i18n/messages"]
+  },
+  "paths": {
+    "src/*": ["src/*"],
+    "/src/*": ["src/*"],
+    "~/*": ["src/*"]
+  }
+}
