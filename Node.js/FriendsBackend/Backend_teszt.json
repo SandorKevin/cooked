@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "6a1d73c9-99a4-4453-b59e-1bcc76a9da76",
+		"name": "Backend_teszt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13294158"
+	},
+	"item": [
+		{
+			"name": "searchBySeason",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/xyzMany/keyword/kerül",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"xyzMany",
+						"keyword",
+						"kerül"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createOne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"season\": \"eleven\",\r\n \"years\": \"2023-2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/add-season",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"add-season"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOne",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/delete-season/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"delete-season",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
